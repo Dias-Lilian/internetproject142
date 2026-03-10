@@ -5,6 +5,13 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; //biblioteca principal do Selenium
 import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
+import static java.lang.Thread.sleep;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver; //biblioteca principal do Selenium
+import org.openqa.selenium.chrome.ChromeDriver; //biblioteca principal do ChromeDriver
 
 //2 -Classe 
 public class LoginTest {
@@ -33,6 +40,7 @@ public class LoginTest {
 		driver.findElement(By.id("username")).sendKeys(textField,"tomsmith");
 		driver.findElement(By.id("password")).sendKeys(textField,"SuperSecretPassword!");
 		driver.findElement(By.cssSelector("input.fa.fa-2x.fa-sign-in")).click();
+		Thread.sleep(2000);
 	}
 		//Transição de Página
 		//Login que deu certo
