@@ -34,19 +34,37 @@ public class LoginTest {
 
 	//Testes
 	@Test
-	public void Login() {
+	public void Login() throws InterruptedException {
 		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
 		//informa usuario, senha e aperta o botao de login
-		driver.findElement(By.id("username")).sendKeys(textField,"tomsmith");
-		driver.findElement(By.id("password")).sendKeys(textField,"SuperSecretPassword!");
-		driver.findElement(By.cssSelector("input.fa.fa-2x.fa-sign-in")).click();
+		driver.findElement(By.id("username")).sendKeys("tomsmith");
+		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
+		driver.findElement(By.cssSelector("button.radius")).click();
 		Thread.sleep(2000);
-	}
+
 		//Transição de Página
 		//Login que deu certo
-		assertEquals("Welcome to the Secure Area. When you are done click logout below.", driver.findElement(By.cssSelector("h4")).getText());
-		driver.findElement(By.cssSelector("icon-2x.icon-signout")).click();
+		assertEquals("Welcome to the Secure Area. When you are done click logout below.", 
+		driver.findElement(By.cssSelector("h4")).getText());
+		driver.findElement(By.linkText("Logout")).click();
+	}
 
+	@Test
+	public void Login01() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("tomsmith");
+		driver.findElement(By.id("password")).sendKeys("Tchau");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado
+		assertEquals("Your password is invalid!", 
+		driver.findElement(By.cssSelector("close")).getText());
+	}
 
 	//3 - Construtores/ construtores
 
