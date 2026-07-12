@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="23.282" tests="2" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="46.974" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\JDK 15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\lilian.nascimento\AppData\Local\Temp\surefire17653491069953743892\surefirebooter-20260706213118167_3.jar C:\Users\lilian.nascimento\AppData\Local\Temp\surefire17653491069953743892 2026-07-06T21-31-17_849-jvmRun1 surefire-20260706213118167_1tmp surefire_0-20260706213118167_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\lilian.nascimento\AppData\Local\Temp\surefire16247305494006067251\surefirebooter-20260712181529699_3.jar C:\Users\lilian.nascimento\AppData\Local\Temp\surefire16247305494006067251 2026-07-12T18-15-29_182-jvmRun1 surefire-20260712181529699_1tmp surefire_0-20260712181529699_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Iterasys (VSCODE)\internetproject142\target\test-classes;C:\Iterasys (VSCODE)\internetproject142\target\classes;C:\Users\lilian.nascimento\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\lilian.nascimento\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\lilian.nascimento\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lilian.nascimento\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-java\4.38.0\selenium-java-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-api\4.38.0\selenium-api-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.38.0\selenium-chrome-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.38.0\selenium-chromium-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-json\4.38.0\selenium-json-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.38.0\selenium-manager-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.38.0\selenium-devtools-v140-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.38.0\selenium-devtools-v141-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.38.0\selenium-devtools-v142-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.38.0\selenium-edge-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.38.0\selenium-firefox-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-http\4.38.0\selenium-http-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.38.0\selenium-ie-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.38.0\selenium-remote-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\lilian.nascimento\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\lilian.nascimento\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-os\4.38.0\selenium-os-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.38.0\selenium-safari-driver-4.38.0.jar;C:\Users\lilian.nascimento\.m2\repository\org\seleniumhq\selenium\selenium-support\4.38.0\selenium-support-4.38.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\lilian.nascimento\AppData\Local\Temp\surefire17653491069953743892\surefirebooter-20260706213118167_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\lilian.nascimento\AppData\Local\Temp\surefire16247305494006067251\surefirebooter-20260712181529699_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -55,49 +55,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="Login" classname="LoginTest" time="12.294">
-    <system-err><![CDATA[jul. 06, 2026 9:31:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 149
-jul. 06, 2026 9:31:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  <testcase name="Login01" classname="LoginTest" time="10.968">
+    <system-err><![CDATA[jul. 12, 2026 6:15:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+jul. 12, 2026 6:15:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Login01" classname="LoginTest" time="10.931">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;close&quot;}&#10;  (Session info: chrome=149.0.7827.201)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception&#10;Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9c9b80d4865228983c87135cda93b745, findElement {using=css selector, value=close}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\LILIAN~1.NAS\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59672}, goog:processID: 28800, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59672/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9c9b80d4865228983c87135cda93b745" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"close"}
-  (Session info: chrome=149.0.7827.201)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c9b80d4865228983c87135cda93b745, findElement {using=css selector, value=close}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\LILIAN~1.NAS\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59672}, goog:processID: 28800, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59672/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c9b80d4865228983c87135cda93b745
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at LoginTest.Login01(LoginTest.java:66)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-    <system-err><![CDATA[jul. 06, 2026 9:31:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 149
-jul. 06, 2026 9:31:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  <testcase name="Login02" classname="LoginTest" time="12.222">
+    <system-err><![CDATA[jul. 12, 2026 6:15:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+jul. 12, 2026 6:15:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Login03" classname="LoginTest" time="11.309">
+    <system-err><![CDATA[jul. 12, 2026 6:15:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+jul. 12, 2026 6:15:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Login04" classname="LoginTest" time="12.421">
+    <system-err><![CDATA[jul. 12, 2026 6:16:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+jul. 12, 2026 6:16:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>

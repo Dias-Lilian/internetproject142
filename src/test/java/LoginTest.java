@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; //biblioteca principal do Selenium
 import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.hamcrest.CoreMatchers.is;
 import static java.lang.Thread.sleep;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,7 +36,7 @@ public class LoginTest {
 
 	//Testes
 	@Test
-	public void Login() throws InterruptedException {
+	public void Login01() throws InterruptedException {
 		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
 
 		//informa usuario, senha e aperta o botao de login
@@ -44,14 +46,14 @@ public class LoginTest {
 		Thread.sleep(2000);
 
 		//Transição de Página
-		//Login que deu certo
+		//Login que deu certo (usuario e senha corretos)
 		assertEquals("Welcome to the Secure Area. When you are done click logout below.", 
 		driver.findElement(By.cssSelector("h4")).getText());
 		driver.findElement(By.linkText("Logout")).click();
 	}
 
 	@Test
-	public void Login01() throws InterruptedException {
+	public void Login02() throws InterruptedException {
 		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
 
 		//informa usuario, senha e aperta o botao de login
@@ -61,9 +63,45 @@ public class LoginTest {
 		Thread.sleep(2000);
 
 		//Transição de Página
-		//Login que deu errado
-		assertEquals("Your password is invalid!", 
-		driver.findElement(By.cssSelector("close")).getText());
+		//Login que deu errado (usuario correto e senha errada)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your password is invalid!"));
+	}
+
+	@Test
+	public void Login03() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("chuchu");
+		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario errado e senha correta)
+		//assertEquals("Your password is invalid!", 
+		//driver.findElement(By.id("flash")).getText());
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertFalse(textoFlash.contains("Your password is invalid!"));
+	}
+
+	@Test
+	public void Login04() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("chuchu");
+		driver.findElement(By.id("password")).sendKeys("chuchu");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario e senha errados)
+		//assertEquals("Your password is invalid!", 
+		//driver.findElement(By.id("flash")).getText());
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertFalse(textoFlash.contains("Your password is invalid!"));
 	}
 
 	//3 - Construtores/ construtores
