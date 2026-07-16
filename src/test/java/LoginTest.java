@@ -63,7 +63,7 @@ public class LoginTest {
 		Thread.sleep(2000);
 
 		//Transição de Página
-		//Login que deu errado (usuario correto e senha errada)
+		//Login que deu errado (usuario correto e senha incorreta)
 		String textoFlash = driver.findElement(By.id("flash")).getText(); 
 		assertTrue(textoFlash.contains("Your password is invalid!"));
 	}
@@ -79,11 +79,9 @@ public class LoginTest {
 		Thread.sleep(2000);
 
 		//Transição de Página
-		//Login que deu errado (usuario errado e senha correta)
-		//assertEquals("Your password is invalid!", 
-		//driver.findElement(By.id("flash")).getText());
+		//Login que deu errado (usuario incorreto e senha correta)
 		String textoFlash = driver.findElement(By.id("flash")).getText(); 
-		assertFalse(textoFlash.contains("Your password is invalid!"));
+		assertTrue(textoFlash.contains("Your username is invalid!"));
 	}
 
 	@Test
@@ -97,11 +95,89 @@ public class LoginTest {
 		Thread.sleep(2000);
 
 		//Transição de Página
-		//Login que deu errado (usuario e senha errados)
-		//assertEquals("Your password is invalid!", 
-		//driver.findElement(By.id("flash")).getText());
+		//Login que deu errado (usuario e senha incorretos)
 		String textoFlash = driver.findElement(By.id("flash")).getText(); 
-		assertFalse(textoFlash.contains("Your password is invalid!"));
+		assertTrue(textoFlash.contains("Your username is invalid!"));
+	}
+
+	@Test
+	public void Login05() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("");
+		driver.findElement(By.id("password")).sendKeys("");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario e senha em branco)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your username is invalid!"));
+	}
+
+	@Test
+	public void Login06() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("");
+		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario em branco e senha correta)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your username is invalid!"));
+	}
+
+	@Test
+	public void Login07() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("tomsmith");
+		driver.findElement(By.id("password")).sendKeys("");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario correto e senha em branco)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your password is invalid!"));
+	}
+
+	@Test
+	public void Login08() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("");
+		driver.findElement(By.id("password")).sendKeys("chuchu");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario em branco e senha incorreta)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your username is invalid!"));
+	}
+
+	@Test
+	public void Login09() throws InterruptedException {
+		driver.get("https://the-internet.herokuapp.com/login");// abre o site Login Page
+
+		//informa usuario, senha e aperta o botao de login
+		driver.findElement(By.id("username")).sendKeys("chuchu");
+		driver.findElement(By.id("password")).sendKeys("");
+		driver.findElement(By.cssSelector("button.radius")).click();
+		Thread.sleep(2000);
+
+		//Transição de Página
+		//Login que deu errado (usuario incorreto e senha em branco)
+		String textoFlash = driver.findElement(By.id("flash")).getText(); 
+		assertTrue(textoFlash.contains("Your username is invalid!"));
 	}
 
 	//3 - Construtores/ construtores
